@@ -1,0 +1,152 @@
+img{
+    -webkit-background-size: cover;
+    background-size:cover ;
+    max-width: 100%;
+}
+a:hover{
+    text-decoration: none !important;
+}
+/* font awsome style */
+.fa{
+    width: 50px;
+    height: 60px;
+    margin-left: 5%;
+}
+/* row */
+.row{
+ margin-top: 6%; 
+ margin-bottom: 6%;
+}
+/* logo */
+.logo-name{
+  font-family: 'Satisfy', cursive;
+  font-size: 2em;
+  text-shadow: 3px 3px 2px #bdb6b6;
+  padding: 10%;
+}
+/* outer wrap in the center */
+#outer-wrap{
+    width:65%;
+    height: 100%;
+    margin-top: 3%;
+    -webkit-box-shadow: -5px -3px 22px #bdb6b6;
+    box-shadow: -5px -3px 22px #bdb6b6;
+}
+/* navigation style */
+/* nav dropdown */
+
+.dropdown-menu{
+    background-color: gray !important;
+}
+
+.nav-row ul li a{
+    color: #fff !important;
+    margin-right: 25px;
+}
+
+.dropdown-menu a:hover, .dropdown-item a:hover{
+    color: lightseagreen !important; /* for sub menu on hover */
+}
+
+
+@media (min-width:990px){
+.nav-row{
+    background-color: #585858;
+    width: 89%;
+    height: 50px;
+    margin: 0 auto !important;
+    border-radius:1em 4em 1em 4em;
+    -webkit-box-shadow: 0px 8px 6px -6px black;
+    box-shadow: 0px 8px 6px -6px black;
+        
+   
+  
+}
+}
+
+
+/* media */
+.media{
+    margin-top: 10%;
+}
+/* ===========================rotating camera ===========================*/
+#my_cam_rotate img {
+    
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {-webkit-transform: rotate(180deg);}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {transform: rotate(200deg);}
+         }
+/* =========================== rotating camera ends ======================*/
+
+/* ===========================  IMAGE SLIDS ==============================*/
+.imgstyle{
+    position:relative;
+    width:100%;
+    height:200px;
+    overflow:hidden;
+    margin-bottom: 1%;
+}
+.caption {
+    font-size: 20px;
+    color: white; 
+    text-align: center;
+    background-color: #800000;
+    width: 230px;
+   
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imgGallary,#imgGallary2,#imgGallary3{
+    box-shadow: 0px 8px 6px -6px black; 
+    
+}
+#imgGallary::after{
+    background:url(../img/captions/landscapes.jpg);
+}
+
+/* logo bottom make it other way round */
+#logo-bottom{
+    transform:  scaleX(-1); /* to make the image other way round */
+    width: 100%;
+}
+
+
+/* =======================================footer ========================================*/
+footer{
+    margin-top: 15%;
+    margin-bottom: 5%;
+    color: #fff;
+}
+.footr{
+     background-color: #585858;
+    width: 89%;
+    height: 50px;
+    margin: 0 auto !important;
+    border-radius:1em 4em 1em 4em;
+    -webkit-box-shadow: 0px 8px 6px -6px black;
+    box-shadow: 0px 8px 6px -6px black;
+        
+}
+
+/*============================== image.html page style ==============================*/
+.bx-viewport{
+    margin-top: 2%;
+}
+
+/* the following line will provide a gap between the column in mobile screen */
+@media (max-width:900px){
+    .col-margin{
+        margin: 2px 0;
+    }
+}
+
